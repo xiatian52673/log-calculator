@@ -1,27 +1,17 @@
-var express = require('express'),
-    sio = require('socket.io'),
-    bodyParser = require('body-parser');
+const express = require('express');
 
+const app = express();
+
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 const path = require('path');
+const bodyParser = require('body-parser');
 
-var app =express()
-app.use(bodyParser());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '/../client/dist/')));
 
+io.on('connection', socket => console.log('a user connected'));
 
-var server = app.listen(3000);
-var io=sio.listen(server);
-
-io.sockets.on('connection',function(socket){
-    socket.on('join',(name)=>{
-        socket.nickname=name;
-        console.log("joinkname:"+name)
-        // console.log(socket.broadcast.RequestHeaders);
-        socket.broadcast.emit('announcement',name+'join the chat');
-        // socket.emit('announcement',name+'join the chat');
-    })
-    console.log("someone connected")
-})
+http.listen(5000, () => console.log('listening on port 5000'));
