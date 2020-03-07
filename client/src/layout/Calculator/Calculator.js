@@ -24,6 +24,7 @@ class Calculator extends React.Component {
     }
     onButtonPress = event => {
         if (this.state.finishedEval) this.clear();
+
         let equation = this.state.equation;
         const pressedButton = event.target.innerHTML;
         

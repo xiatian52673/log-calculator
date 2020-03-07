@@ -46,27 +46,27 @@ body {
 
 /* Calculator */
 .calculator {
-    height: 80vh;
-    width: 25%;
+    height: 100vh;
+    width: 20%;
     box-shadow: 0 2rem 4rem var(--shadow);
     background-color: var(--color-white);
-}
+} 
 
 @media screen and (max-width: 1280px) {
     .calculator {
-        width: 50%;
+        width: 40%;
     }
 }
 
 @media screen and (max-width: 640px) {
     .calculator {
-        width: 80%;
+        width: 64%;
     }
 }
 
 /* Screen */
 .screen {
-    height: 25vh;
+    height: 18vh;
     width: 100%;
     padding: 0 2rem;
     overflow: hidden;
@@ -86,8 +86,8 @@ body {
 }
 
 .result-screen {
-    height: 19vh;
-    font-size: 8rem;
+    height: 12vh;
+    font-size: 7rem;
     font-weight: 600;
 
     display: flex;
@@ -97,12 +97,12 @@ body {
 
 /* Keypad */
 .keypad {
-    height: 55vh;
+    height: 50vh;
     width: 100%;
 }
 
 .keypad__row {
-    height: 11vh;
+    height: 10vh;
     width: 100%;
     display: flex;
 }
@@ -153,7 +153,7 @@ body {
 }
 
 .log {
-    background-color: #F0F8FF;
+    background-color: white;
     width: 100%;
     display: flex;
     justify-content: center;
