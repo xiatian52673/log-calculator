@@ -153,12 +153,12 @@ body {
 }
 
 .log {
-    background-color: lightgray;
-    width: 30%;
+    background-color: #F0F8FF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-  }
-  
-.logEntry {
-font-style: italic;
-color: grey;
+    font-size: 2rem ;
 }
+  
