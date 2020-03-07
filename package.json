@@ -1,42 +1,25 @@
 {
-  "name": "log_calculator",
-  "version": "1.0.0",
-  "description": "A calculator with logs which do not expire between sessions",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/",
-    "build": "webpack -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiatian52673/log-calculator.git"
-  },
-  "keywords": [],
-  "author": "Tian Xia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xiatian52673/log-calculator/issues"
-  },
-  "homepage": "https://github.com/xiatian52673/log-calculator#readme",
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^2.1.1",
-    "nodemon": "^1.19.1",
-    "path": "^0.12.7",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
-  },
+  "name": "calculator",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "socket.io": "^2.2.0"
-  }
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "2.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
