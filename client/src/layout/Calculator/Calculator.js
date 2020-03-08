@@ -4,7 +4,7 @@ import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
 import Log from './Screen/Log';
 
-const socket = io('https://master.d30x2i0ccapnj3.amplifyapp.com/');
+const socket = io('https://tian-log-calculator.herokuapp.com/');
 
 class Calculator extends React.Component {
     state = {
