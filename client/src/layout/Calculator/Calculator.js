@@ -4,7 +4,7 @@ import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
 import Log from './Screen/Log';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://tian-log-calculator.herokuapp.com/');
 
 class Calculator extends React.Component {
     state = {
@@ -27,9 +27,8 @@ class Calculator extends React.Component {
             this.clear();
             return;
         }
-        
+
         let equation = this.state.equation;
-    
         const pressedButton = event.target.innerHTML;
         
         if (pressedButton === 'C') {
