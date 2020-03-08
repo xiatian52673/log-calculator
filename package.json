@@ -10,7 +10,6 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
-    "nodemon": "^1.19.1",
     "path": "^0.12.7",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
@@ -26,8 +25,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/",
-    "build": "webpack -w"
+    "start": "node ./server/",
+    "build": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +36,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "Calculator with Logs of previous 10 calculation. Logs remain between sessons.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiatian52673/log-calculator.git"
+  },
+  "author": "Tian XIa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiatian52673/log-calculator/issues"
+  },
+  "homepage": "https://github.com/xiatian52673/log-calculator#readme"
 }
