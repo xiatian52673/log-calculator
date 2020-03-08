@@ -4,7 +4,7 @@ import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
 import Log from './Screen/Log';
 
-const socket = io('http://localhost:3000');
+const socket = io('https://master.d30x2i0ccapnj3.amplifyapp.com/');
 
 class Calculator extends React.Component {
     state = {
