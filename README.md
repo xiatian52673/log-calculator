@@ -1,5 +1,5 @@
 # Tian's Log Calculator
-Calculator with Logs of previous 10 calculation. Logs remain between sessons.
+Calculator with real-time logs of previous 10 calculations. Logs remain between different user sessions.
 
 ## Public Access
 https://tian-log-calculator.herokuapp.com/
